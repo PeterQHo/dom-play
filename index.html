@@ -20,7 +20,7 @@
      <h1>DOM Play</h1>
         <nav class="topnav" id="myTopnav">
             <a href="index.html" class="active">Home</a>
-            <a href="#" target="_blank">Name of project goes here</a>
+            <a href="#" target="_blank">Star Wars Script</a>
             <a href="javascript:void(0);" class="icon" onclick="myFunction()">&#9776;</a>
         </nav>
      </header>
@@ -42,7 +42,7 @@
         <p><span data-actor="han">Han: Good.</span></p>
         <p><span data-actor="lando">Lando: You know, that ship saved my life quite a few times. She's the fastest hunk of junk in the galaxy.</span></p>
     </div>
-    <p>The goal of the project is when an actor is clicked on the page will highlight all of the actor lines on the page. This is done by </p>
+    <p>The goal of the project is when an actor is clicked on the page will highlight all of the actor lines on the page. This is done by putting all of the p tag elements in a div and to put the text in a span tag to highlight the words and not the p tag line on the page. By creating a id of "play" for the div I was able to select that id. I create a let function of "span" assigning it the value of document.querySelectorAll("#play span"); to select the id of the div and to select all the descendant span tags in it. I used the data attribrute and called in data-actor="Name of the actor" in my span tag so Java can tell the actors apart. Next I built an anonymous function into our event listener loop and than  created a new function named highlightActor(mySpan.dataset.actor), in which we pass in the identity of the current actor to the function so that when clicked, the element always knows its name. Then using a conditional we say that if actor == mySpan.dataset.actor than the background-color of all the actor line will height yellow and other actors will be white.</p>
      <footer>
       <p><small>&copy; 2022 by 
           Peter Ho, All Rights Reserved ~ 
